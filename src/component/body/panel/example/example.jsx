@@ -14,7 +14,7 @@ export const Example = observer(({ order }) => {
       setExamples(await exampleResult.json())
     }
     fetchData()
-  })
+  }, [])
   return (
     <>
       {PS.order === order && (

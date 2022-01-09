@@ -29,7 +29,7 @@ const CommentList = observer(() => {
       )
     }
     fetchData()
-  })
+  }, [])
   return (
     <div className={s.commentList}>
       {commentService.comments.map((comment) => (
@@ -120,7 +120,7 @@ const FollowCardList = observer(({ comment, close }) => {
       comment.loaded = true
     }
     fetchData()
-  })
+  }, [])
   return (
     <>
       {comment.comments.length !== 0 ? (
