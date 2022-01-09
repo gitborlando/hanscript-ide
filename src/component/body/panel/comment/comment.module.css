@@ -1,0 +1,166 @@
+.comment {
+  width: 100%;
+  height: calc(100% - 50px);
+  position: relative;
+  user-select: none;
+  overflow: hidden;
+}
+
+.commentList {
+  width: 100%;
+  height: calc(100% - 55px);
+  padding: 10px 10px 0 10px;
+  overflow: auto;
+}
+
+.commentCard {
+  width: 100%;
+  height: fit-content;
+  padding: 15px;
+  /* border: 1px solid rgba(0, 0, 0, 0.109); */
+  background-color: rgb(255, 255, 255);
+  border-radius: 10px;
+  margin-bottom: 10px;
+}
+
+.title {
+  width: 100%;
+  height: fit-content;
+  display: flex;
+  align-items: center;
+}
+
+.name {
+  font-size: 12px;
+  color: rgb(71, 71, 71);
+  margin-right: 10px;
+}
+
+.time {
+  font-size: 9px;
+  color: rgb(160, 160, 160);
+  display: flex;
+  align-items: center;
+}
+
+.to {
+  font-family: 'iconfont';
+  color: rgb(139, 139, 139);
+  font-size: 13px;
+  margin-right: 7px;
+}
+
+.content {
+  word-break: break-word;
+  margin: 10px 0;
+  font-size: 14px;
+  color: rgb(27, 27, 27);
+  height: fit-content;
+}
+
+.operator {
+  width: fit-content;
+  display: flex;
+  font-family: 'iconfont';
+  font-size: 13px;
+  color: rgb(156, 156, 156);
+  cursor: pointer;
+}
+
+.star {
+  display: flex;
+  min-width: 32px;
+  margin-right: 10px;
+}
+.star:hover {
+  color: var(--hover);
+}
+.stared {
+  color: var(--hover);
+}
+
+.zhankai {
+  width: fit-content;
+  margin-top: 5px;
+  font-size: 12px;
+  color: rgb(156, 156, 156);
+  cursor: pointer;
+}
+.zhankai:hover {
+  color: var(--hover);
+}
+
+.shouqi {
+  width: fit-content;
+  margin: 5px 5px 0 10px;
+  font-size: 12px;
+  color: rgb(156, 156, 156);
+  cursor: pointer;
+}
+.shouqi:hover {
+  color: rgb(255, 24, 132);
+}
+
+.comments {
+  padding-left: 15px;
+}
+
+.followCard {
+  width: 100%;
+  height: fit-content;
+  padding: 10px 10px 0px 10px;
+  /* border-bottom: 1px solid rgba(0, 0, 0, 0.082); */
+}
+
+.commentList::-webkit-scrollbar {
+  appearance: none;
+  width: 0px;
+  height: 0px;
+}
+
+.commentInput {
+  width: 100%;
+  height: auto;
+  min-height: 55px;
+  background-color: white;
+  padding: 10px 10px 0 10px;
+  display: flex;
+  position: absolute;
+  bottom: 0;
+}
+
+.inputArea {
+  width: 100%;
+  height: 100%;
+  border-radius: 10px;
+  padding: 10px 15px;
+  background-color: rgba(217, 231, 235, 0.376);
+  background-color: var(--comment-bgcolor);
+  display: flex;
+  align-items: center;
+}
+
+.input {
+  width: calc(100% - 30px);
+  border: 0;
+  outline: 0;
+  flex: 1;
+  background-color: transparent;
+  height: fit-content;
+  font-size: 15px;
+}
+.input:empty::after {
+  content: attr(placeholder);
+  color: rgb(161, 161, 161);
+}
+
+.send {
+  font-size: 20px;
+  margin-left: 10px;
+  margin-top: auto;
+  font-family: 'iconfont';
+  cursor: pointer;
+}
+.send:hover {
+  color: rgb(255, 24, 132);
+}

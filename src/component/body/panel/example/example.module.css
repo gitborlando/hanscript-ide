@@ -1,0 +1,56 @@
+.example {
+  width: 100%;
+  height: calc(100% - 50px);
+  padding: 10px 10px 0 10px;
+  position: relative;
+  user-select: none;
+  overflow: auto;
+  cursor: pointer;
+}
+
+.example::-webkit-scrollbar {
+  appearance: none;
+  width: 0;
+  height: 0;
+}
+
+.exampleCard {
+  width: 100%;
+  height: fit-content;
+  padding: 15px;
+  margin-bottom: 10px;
+  background-color: white;
+  border-radius: 10px;
+  display: flex;
+  align-items: flex;
+}
+.selected {
+  color: var(--hover);
+}
+
+.index {
+  padding: 0 5px;
+}
+
+.name {
+  flex: 1;
+}
+
+.star {
+  min-width: 30px;
+  font-family: 'iconfont';
+  display: flex;
+  flex-direction: column;
+  font-size: 13px;
+  color: gray;
+  margin: 0 10px 0 0;
+  cursor: pointer;
+}
+.star:hover {
+  color: var(--hover);
+}
+
+.starIcon {
+  height: 20px;
+  font-size: 18px;
+}

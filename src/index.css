@@ -1,0 +1,58 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  display: 'flex';
+  align-items: center;
+}
+
+html,
+body {
+  width: 100vw;
+  height: 100vh;
+}
+
+:root {
+  --comment-bgcolor: rgba(217, 231, 235, 0.376);
+  --comment-bgcolor: rgba(211, 221, 224, 0.376);
+  --comment-bgcolor: #e9ecef;
+  --hover: rgb(255, 24, 132);
+}
+
+@font-face {
+  font-family: 'iconfont'; /* Project id 2908084 */
+  src: url('//at.alicdn.com/t/font_2908084_yo5yihrucwh.woff2?t=1641619780674')
+      format('woff2'),
+    url('//at.alicdn.com/t/font_2908084_yo5yihrucwh.woff?t=1641619780674')
+      format('woff'),
+    url('//at.alicdn.com/t/font_2908084_yo5yihrucwh.ttf?t=1641619780674')
+      format('truetype');
+}
+
+@font-face {
+  font-family: 'Monaco';
+  src: url('./asserts/Monaco.ttf') format('truetype');
+}
+
+#root {
+  width: 100vw;
+  height: 100vh;
+}
+
+.app {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  font-family: 'Monaco';
+}
+
+.center {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.pointer {
+  cursor: pointer;
+}
