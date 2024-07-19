@@ -16,7 +16,7 @@ export const Tutorial = observer(({ order }) => {
 		// }
 		// fetchData()
 		setHtml(markdown.render(tutorialStr))
-	}, [])
+	}, [markdown])
 	return (
 		<>
 			{PS.order === order && (
